@@ -54,7 +54,7 @@ public class Event {
         this.price = price;
     }
 
-    Event(String name, String date, String location, int maxNumberOfSeats, int availableSeats, double price) {
+    Event(String name, double price) {
         this.name = name;
         this.price = price;
         this.date = date;

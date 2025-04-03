@@ -1,4 +1,4 @@
-import java.util.ArrayList<Event>
+import java.util.ArrayList;
 public class Customer {
     String firstName;
     String lastName;
@@ -43,4 +43,14 @@ public class Customer {
 
 
     }
+    public void addReservation(Event event){
+        reservationLists.add(event);
+    }
+    public void displayReservations(){
+        reservationLists.forEach(System.out::println);
+    }
+    public void cancelReservation(Event event){
+        reservationLists.remove(event);
+    }
 }
+
